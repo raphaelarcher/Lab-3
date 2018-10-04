@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Beverage Order</h1>
+        <div class="my-4 p-4">
+            <form class="form-group row">
+                Customer Name:<br>
+                <input type="text" id="customername"class="ml-3" name="firstname"><br>
+            </form>
+            <div>
+                <form>
+                    <div class="row">
+                        <div class="col-4 form-inline">
+                            Beverage:<br>
+                            <select class="form-control ml-3" id="drinks">
+                                <option value="0">Coffee</option>
+                                <option value="1">Tea</option>
+                                <option value="2">Beer</option>
+                                <option value="3">Wine</option>
+                            </select>
+                        </div>
+                        <div class="col-4 form-inline">
+                            Quantity:<br>
+                            <input type="text" id="quantity" class="form-control ml-3">
+                        </div>
+                    </div>
+                    <div class="form-inline my-3">
+                            Birthday:
+                            <input type="date" class="ml-3" name="bday">
+                    </div>
+                    <button type="button" onclick="getCustomerName()" class="btn btn-warning my-3">Submit Order</button>
+                    <h5 id="submitt"></h5>
+                    <h5 id="selecteddrink" class="pt-3"></h5>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="adder.js"></script>
+</body>
+</html>
